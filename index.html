@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESTILO KUSARI | Macramé, Metal y Piedra</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="cart-toggle" hidden>
+    <input type="checkbox" id="add-1" hidden>
+    <input type="checkbox" id="add-2" hidden>
+    <input type="checkbox" id="add-3" hidden>
+    <input type="checkbox" id="add-4" hidden>
+    <input type="checkbox" id="add-5" hidden>
+    <input type="checkbox" id="add-6" hidden>
+    <input type="checkbox" id="add-7" hidden>
+    <input type="checkbox" id="add-8" hidden>
+    <input type="checkbox" id="add-9" hidden>
+
+    <header class="header">
+        <a href="#" class="logo">KUSARI_</a>
+        <nav class="nav">
+            <a href="#catalogo">COLECCIÓN</a>
+            <a href="#manifiesto">MANIFIESTO</a>
+            <label for="cart-toggle" class="btn-cart">CARRITO</label>
+        </nav>
+    </header>
+
+    <div class="carrito-panel">
+        <div class="carrito-head">
+            <h3>TU SELECCIÓN</h3>
+            <label for="cart-toggle" class="cerrar-cart">✕</label>
+        </div>
+        <div class="carrito-body">
+            <div class="cart-empty">Tu carrito está vacío. ¡Agregá nudos!</div>
+            <div class="cart-item item-1"><img src="images/cartera-roja-negra.jpg"><div><strong>Cartera Roja Negra</strong><br>$78.000</div><label for="add-1" class="remove">x</label></div>
+            <div class="cart-item item-2"><img src="images/collar-macrame-verde.jpg"><div><strong>Collar Macramé Verde</strong><br>$45.000</div><label for="add-2" class="remove">x</label></div>
+            <div class="cart-item item-3"><img src="images/collar-puntas.jpg"><div><strong>Collar Puntas Metal</strong><br>$38.000</div><label for="add-3" class="remove">x</label></div>
+            <div class="cart-item item-4"><img src="images/cartera-macrame.jpg"><div><strong>Cartera Macramé Oro</strong><br>$85.000</div><label for="add-4" class="remove">x</label></div>
+            <div class="cart-item item-5"><img src="images/collar-pequenio.jpg"><div><strong>Collar Turquesa Prisma</strong><br>$32.000</div><label for="add-5" class="remove">x</label></div>
+            <div class="cart-item item-6"><img src="images/collarmacrame.jpg"><div><strong>Collar Macramé Solar</strong><br>$29.000</div><label for="add-6" class="remove">x</label></div>
+            <div class="cart-item item-7"><img src="images/top-verde.jpg"><div><strong>Top Verde Aura</strong><br>$55.000</div><label for="add-7" class="remove">x</label></div>
+            <div class="cart-item item-8"><img src="images/vestido-crema-macrame.jpg"><div><strong>Vestido Crema Macramé</strong><br>$92.000</div><label for="add-8" class="remove">x</label></div>
+            <div class="cart-item item-9"><img src="images/vestidocompleto-rosa.jpg"><div><strong>Vestido Completo Rosa</strong><br>$89.000</div><label for="add-9" class="remove">x</label></div>
+        </div>
+        <div class="carrito-foot">
+            <p>Envío artesanal desde Salta</p>
+            <a href="#" class="btn-pop full">FINALIZAR COMPRA</a>
+        </div>
+    </div>
+    <label for="cart-toggle" class="overlay"></label>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>ESTILO<br>KUSARI<br><span>HECHO PARA DESTACAR</span></h1>
+            <p>Vestir <strong>creaciones únicas</strong>, hechas a mano, con metal, turquesa y trama nómade. Cada pieza es irrepetible.</p>
+            <a href="#catalogo" class="btn-pop pulse">EXPLORAR CREACIONES</a>
+        </div>
+        <div class="hero-visual"><div class="macrame-ball"></div></div>
+    </section>
+
+    <div class="marquee"><div class="marquee-track"><span>HECHO A MANO • POP ART • MACRAMÉ • METAL • PIEDRA • KUSARI • </span><span>HECHO A MANO • POP ART • MACRAMÉ • METAL • PIEDRA • KUSARI • </span><span>HECHO A MANO • POP ART • MACRAMÉ • METAL • PIEDRA • KUSARI • </span></div></div>
+
+    <section id="catalogo" class="shop">
+        <div class="section-head">
+            <span class="kicker">KUSARI · 001</span>
+            <h2>COLECCIÓN KUSARI</h2>
+            <p>Piezas pensadas para quienes prefieren vestir su propia historia.</p>
+        </div>
+        <div class="filtros">
+            <label for="cat-todo" class="filtro-btn">TODO</label>
+            <label for="cat-carteras" class="filtro-btn">CARTERAS</label>
+            <label for="cat-joyas" class="filtro-btn">JOYAS</label>
+            <label for="cat-ropa" class="filtro-btn">ROPA</label>
+        </div>
+        <div class="grid">
+            <article class="card" data-cat="carteras">
+                <div class="card-img" style="background-image:url('images/cartera-roja-negra.jpg')"><span class="tag">ACCESORIOS</span></div>
+                <div class="card-info"><h3>Cartera Roja Negra</h3><p>Nudo y contraste, textura artesanal.</p><span>$78.000</span></div>
+                <div class="card-actions"><a href="#prod-1" class="btn-eye">VER</a><label for="add-1" class="btn-add">+ CARRITO</label></div>
+            </article>
+            <article class="card" data-cat="joyas">
+                <div class="card-img" style="background-image:url('images/collar-macrame-verde.jpg')"><span class="tag turquesa">KUSARI</span></div>
+                <div class="card-info"><h3>Collar Macramé Verde</h3><p>Piedra y cadena inspiración industrial.</p><span>$45.000</span></div>
+                <div class="card-actions"><a href="#prod-2" class="btn-eye">VER</a><label for="add-2" class="btn-add">+ CARRITO</label></div>
+            </article>
+            <article class="card" data-cat="joyas">
+                <div class="card-img" style="background-image:url('images/collar-puntas.jpg')"><span class="tag pop">POP</span></div>
+                <div class="card-info"><h3>Collar Puntas Metal</h3><p>Presencia escultórica y brillo.</p><span>$38.000</span></div>
+                <div class="card-actions"><a href="#prod-3" class="btn-eye">VER</a><label for="add-3" class="btn-add">+ CARRITO</label></div>
+            </article>
+            <article class="card" data-cat="carteras">
+                <div class="card-img" style="background-image:url('images/cartera-macrame.jpg')"><span class="tag">ARTESANAL</span></div>
+                <div class="card-info"><h3>Cartera Macramé Nudo Oro</h3><p>Detalles metálicos y trama hecha a mano.</p><span>$85.000</span></div>
+                <div class="card-actions"><a href="#prod-4" class="btn-eye">VER</a><label for="add-4" class="btn-add">+ CARRITO</label></div>
+            </article>
+            <article class="card" data-cat="joyas">
+                <div class="card-img" style="background-image:url('images/collar-pequenio.jpg')"><span class="tag turquesa">TURQUESA</span></div>
+                <div class="card-info"><h3>Collar Turquesa Prisma</h3><p>Volumen geométrico y detalles únicos.</p><span>$32.000</span></div>
+                <div class="card-actions"><a href="#prod-5" class="btn-eye">VER</a><label for="add-5" class="btn-add">+ CARRITO</label></div>
+            </article>
+            <article class="card" data-cat="joyas">
+                <div class="card-img" style="background-image:url('images/collarmacrame.jpg')"><span class="tag">METAL</span></div>
+                <div class="card-info"><h3>Collar Macramé Solar</h3><p>Cadena dorada con trama nómade.</p><span>$29.000</span></div>
+                <div class="card-actions"><a href="#prod-6" class="btn-eye">VER</a><label for="add-6" class="btn-add">+ CARRITO</label></div>
+            </article>
+            <article class="card" data-cat="ropa">
+                <div class="card-img" style="background-image:url('images/top-verde.jpg')"><span class="tag pop">POP</span></div>
+                <div class="card-info"><h3>Top Verde Aura</h3><p>Trama manual y silueta ligera.</p><span>$55.000</span></div>
+                <div class="card-actions"><a href="#prod-7" class="btn-eye">VER</a><label for="add-7" class="btn-add">+ CARRITO</label></div>
+            </article>
+            <article class="card" data-cat="ropa">
+                <div class="card-img" style="background-image:url('images/vestido-crema-macrame.jpg')"><span class="tag">KUSARI</span></div>
+                <div class="card-info"><h3>Vestido Crema Macramé</h3><p>Movimiento, textura y calidez artesanal.</p><span>$92.000</span></div>
+                <div class="card-actions"><a href="#prod-8" class="btn-eye">VER</a><label for="add-8" class="btn-add">+ CARRITO</label></div>
+            </article>
+            <article class="card" data-cat="ropa">
+                <div class="card-img" style="background-image:url('images/vestidocompleto-rosa.jpg')"><span class="tag nuevo">ÚNICO</span></div>
+                <div class="card-info"><h3>Vestido Completo Rosa</h3><p>Macramé, brillo y estructura artesanal.</p><span>$89.000</span></div>
+                <div class="card-actions"><a href="#prod-9" class="btn-eye">VER</a><label for="add-9" class="btn-add">+ CARRITO</label></div>
+            </article>
+        </div>
+    </section>
+
+    <div id="prod-1" class="modal"><div class="modal-box"><a href="#" class="cerrar">✕</a><div class="modal-grid"><div class="modal-img" style="background-image:url('images/cartera-roja-negra.jpg')"></div><div class="modal-info"><h2>CARTERA ROJA NEGRA</h2><p>Nudo y contraste, textura artesanal hecha a mano.</p><span class="price">$78.000</span><label for="add-1" class="btn-pop full">AGREGAR AL CARRITO</label></div></div></div></div>
+    <div id="prod-2" class="modal"><div class="modal-box"><a href="#" class="cerrar">✕</a><div class="modal-grid"><div class="modal-img" style="background-image:url('images/collar-macrame-verde.jpg')"></div><div class="modal-info"><h2>COLLAR MACRAMÉ VERDE</h2><p>Piedra y cadena de inspiración industrial.</p><span class="price">$45.000</span><label for="add-2" class="btn-pop full">AGREGAR AL CARRITO</label></div></div></div></div>
+    <div id="prod-3" class="modal"><div class="modal-box"><a href="#" class="cerrar">✕</a><div class="modal-grid"><div class="modal-img" style="background-image:url('images/collar-puntas.jpg')"></div><div class="modal-info"><h2>COLLAR PUNTAS METAL</h2><p>Presencia escultórica y brillo.</p><span class="price">$38.000</span><label for="add-3" class="btn-pop full">AGREGAR AL CARRITO</label></div></div></div></div>
+    <div id="prod-4" class="modal"><div class="modal-box"><a href="#" class="cerrar">✕</a><div class="modal-grid"><div class="modal-img" style="background-image:url('images/cartera-macrame.jpg')"></div><div class="modal-info"><h2>CARTERA MACRAMÉ ORO</h2><p>Detalles metálicos y trama hecha a mano.</p><span class="price">$85.000</span><label for="add-4" class="btn-pop full">AGREGAR AL CARRITO</label></div></div></div></div>
+    <div id="prod-5" class="modal"><div class="modal-box"><a href="#" class="cerrar">✕</a><div class="modal-grid"><div class="modal-img" style="background-image:url('images/collar-pequenio.jpg')"></div><div class="modal-info"><h2>COLLAR TURQUESA PRISMA</h2><p>Volumen geométrico y detalles únicos - ¡Ahora visible!</p><span class="price">$32.000</span><label for="add-5" class="btn-pop full">AGREGAR AL CARRITO</label></div></div></div></div>
+    <div id="prod-6" class="modal"><div class="modal-box"><a href="#" class="cerrar">✕</a><div class="modal-grid"><div class="modal-img" style="background-image:url('images/collarmacrame.jpg')"></div><div class="modal-info"><h2>COLLAR MACRAMÉ SOLAR</h2><p>Cadena dorada con trama nómade.</p><span class="price">$29.000</span><label for="add-6" class="btn-pop full">AGREGAR AL CARRITO</label></div></div></div></div>
+    <div id="prod-7" class="modal"><div class="modal-box"><a href="#" class="cerrar">✕</a><div class="modal-grid"><div class="modal-img" style="background-image:url('images/top-verde.jpg')"></div><div class="modal-info"><h2>TOP VERDE AURA</h2><p>Trama manual y silueta ligera.</p><span class="price">$55.000</span><label for="add-7" class="btn-pop full">AGREGAR AL CARRITO</label></div></div></div></div>
+    <div id="prod-8" class="modal"><div class="modal-box"><a href="#" class="cerrar">✕</a><div class="modal-grid"><div class="modal-img" style="background-image:url('images/vestido-crema-macrame.jpg')"></div><div class="modal-info"><h2>VESTIDO CREMA MACRAMÉ</h2><p>Movimiento, textura y calidez artesanal.</p><span class="price">$92.000</span><label for="add-8" class="btn-pop full">AGREGAR AL CARRITO</label></div></div></div></div>
+    <div id="prod-9" class="modal"><div class="modal-box"><a href="#" class="cerrar">✕</a><div class="modal-grid"><div class="modal-img" style="background-image:url('images/vestidocompleto-rosa.jpg')"></div><div class="modal-info"><h2>VESTIDO COMPLETO ROSA</h2><p>Macramé, brillo y estructura artesanal.</p><span class="price">$89.000</span><label for="add-9" class="btn-pop full">AGREGAR AL CARRITO</label></div></div></div></div>
+
+    <section id="manifiesto" class="manifiesto">
+        <div class="manifiesto-box">
+            <h2>NO SEGUIMOS <span class="rosa">REGLAS</span></h2>
+            <p>Estilo Kusari nace del encuentro entre lo <span class="amarillo">artesanal</span>, lo <span class="turquesa-text">urbano</span> y lo <span class="rosa">inesperado</span>.</p>
+            <p>Cada pieza busca combinar <strong>materiales</strong>, <strong class="amarillo">colores</strong>, <strong class="rosa">texturas</strong> y formas para crear algo que tenga <span class="dorado">identidad propia</span>.</p>
+            <p class="detalle">Pop art • Macramé • Metal • Piedra • Hecho en Salta</p>
+        </div>
+    </section>
+    <footer class="footer"><p>© 2026 ESTILO KUSARI — Salta, Argentina. Hecho a mano con <span class="rosa">♥</span></p></footer>
+</body>
+</html>
