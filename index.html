@@ -1,1176 +1,522 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Estilo Kusari - Creaciones únicas, accesorios y moda artesanal con identidad.">
-    <title>ESTILO KUSARI | Vestir creaciones únicas</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ESTILO KUSARI | Vestir creaciones únicas</title>
+
+  <meta
+    name="description"
+    content="Estilo Kusari · Creaciones únicas hechas a mano, con metal, turquesa y trama nómade."
+  >
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  >
 </head>
 
 <body>
 
-    <!-- =========================================
-         CONTROLES CSS DEL CARRITO
-    ========================================== -->
+  <!-- =========================
+       HEADER
+  ========================== -->
 
-    <input type="checkbox" id="cart-toggle" class="ui-toggle">
+  <header class="topbar">
 
-    <input type="checkbox" id="add-1" class="ui-toggle">
-    <input type="checkbox" id="add-2" class="ui-toggle">
-    <input type="checkbox" id="add-3" class="ui-toggle">
-    <input type="checkbox" id="add-4" class="ui-toggle">
-    <input type="checkbox" id="add-5" class="ui-toggle">
-    <input type="checkbox" id="add-6" class="ui-toggle">
-    <input type="checkbox" id="add-7" class="ui-toggle">
-    <input type="checkbox" id="add-8" class="ui-toggle">
-    <input type="checkbox" id="add-9" class="ui-toggle">
-    <input type="checkbox" id="add-10" class="ui-toggle">
-    <input type="checkbox" id="add-11" class="ui-toggle">
-    <input type="checkbox" id="add-12" class="ui-toggle">
+    <a href="#" class="logo">
+      KUSARI
+    </a>
 
+    <nav aria-label="Navegación principal">
+      <a href="#coleccion">COLECCIÓN</a>
+      <a href="#manifiesto">HISTORIA</a>
+      <a href="#contacto">CONTACTO</a>
+    </nav>
 
-    <!-- =========================================
-         CONTENEDOR PRINCIPAL
-    ========================================== -->
+  </header>
 
-    <div class="site-shell">
 
-        <!-- =====================================
-             HEADER
-        ====================================== -->
+  <!-- =========================
+       HERO
+  ========================== -->
 
-        <header class="site-header">
+  <main>
 
-            <a href="#inicio" class="logo">
-                <span class="logo-main">ESTILO</span>
-                <span class="logo-sub">KUSARI</span>
-            </a>
+    <section class="hero">
 
-            <nav class="main-nav" aria-label="Navegación principal">
-                <a href="#inicio">Inicio</a>
-                <a href="#categorias">Categorías</a>
-                <a href="#productos">Productos</a>
-                <a href="#nosotros">Kusari</a>
-            </nav>
+      <div class="hero-main">
 
-            <label for="cart-toggle" class="cart-button">
-                <span class="cart-icon">✦</span>
-                <span>Carrito</span>
-            </label>
+        <p class="hero-kicker">
+          ESTILO KUSARI · HECHO PARA DESTACAR
+        </p>
 
-        </header>
+        <h1>
+          ESTILO KUSARI ·
+          <br>
+          HECHO PARA
+          <br>
+          DESTACAR
+        </h1>
 
+      </div>
 
-        <!-- =====================================
-             CONTENIDO PRINCIPAL
-        ====================================== -->
 
-        <main id="inicio">
+      <div class="hero-sub">
 
-            <!-- =================================
-                 HERO
-            ================================== -->
+        <h2>
+          VESTIR
+          <br>
+          EL CAOS
+        </h2>
 
-            <section class="hero">
+        <p>
+          Vestir creaciones únicas, hechas a mano,
+          con metal, turquesa y trama nómade.
+          Cada pieza es irrepetible.
+        </p>
 
-                <div class="hero-decoration hero-decoration-one"></div>
-                <div class="hero-decoration hero-decoration-two"></div>
+        <a href="#coleccion" class="btn">
+          EXPLORAR CREACIONES
+        </a>
 
-                <div class="hero-content">
+      </div>
 
-                    <p class="eyebrow">ESTILO KUSARI · HECHO PARA DESTACAR</p>
+    </section>
 
-                    <h1>
-                        VESTIR<br>
-                        <span>EL CAOS</span>
-                    </h1>
 
-                    <p class="hero-text">
-                        Vestir creaciones únicas
-                    </p>
+    <!-- =========================
+         COLECCIÓN
+    ========================== -->
 
-                    <a href="#productos" class="hero-button">
-                        EXPLORAR CREACIONES
-                    </a>
+    <section id="coleccion" class="coleccion">
 
-                </div>
+      <div class="section-head">
 
-                <div class="hero-art">
+        <span class="section-label">
+          KUSARI · 001
+        </span>
 
-                    <div class="hero-circle"></div>
+        <h2>
+          COLECCIÓN KUSARI
+        </h2>
 
-                    <div class="hero-knot">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
+        <p>
+          Piezas pensadas para quienes prefieren
+          vestir su propia historia.
+        </p>
 
-                    <div class="hero-stone">
-                        TURQUESA
-                    </div>
+      </div>
 
-                    <div class="hero-metal">
-                        K
-                    </div>
 
-                </div>
+      <div class="grid">
 
-            </section>
 
+        <!-- 01 -->
 
-            <!-- =================================
-                 CATEGORÍAS
-            ================================== -->
 
-            <section id="categorias" class="categories-section">
 
-                <div class="section-heading">
-                    <p class="eyebrow">DESCUBRÍ TU ESTILO</p>
-                    <h2>CATEGORÍAS</h2>
-                    <span class="heading-line"></span>
-                </div>
 
-                <div class="category-grid">
+        <!-- 02 -->
 
-                    <a href="#productos" class="category-card category-gold">
-                        <span class="category-number">01</span>
-                        <span class="category-icon">◈</span>
-                        <h3>ACCESORIOS</h3>
-                        <p>Piezas que hacen ruido.</p>
-                    </a>
+        <article class="card">
 
-                    <a href="#productos" class="category-card category-pink">
-                        <span class="category-number">02</span>
-                        <span class="category-icon">✦</span>
-                        <h3>INDUMENTARIA</h3>
-                        <p>Texturas para romper reglas.</p>
-                    </a>
+          <span class="tag">
+            ACCESORIOS
+          </span>
 
-                    <a href="#productos" class="category-card category-turquoise">
-                        <span class="category-number">03</span>
-                        <span class="category-icon">◇</span>
-                        <h3>PIEDRAS</h3>
-                        <p>Minerales con personalidad.</p>
-                    </a>
+          <div class="image-wrap">
+            <img
+              src="images/cartera-roja-negra.jpg.jpg"
+              alt="Cartera roja negra"
+            >
+          </div>
 
-                    <a href="#productos" class="category-card category-white">
-                        <span class="category-number">04</span>
-                        <span class="category-icon">☼</span>
-                        <h3>EDICIONES</h3>
-                        <p>Creaciones fuera de serie.</p>
-                    </a>
+          <div class="card-info">
 
-                </div>
+            <span>
+              ACCESORIOS
+            </span>
 
-            </section>
+            <h3>
+              Cartera Roja Negra
+            </h3>
 
-
-            <!-- =================================
-                 PRODUCTOS
-            ================================== -->
-
-            <section id="productos" class="products-section">
-
-                <div class="section-heading">
-                    <p class="eyebrow">COLECCIÓN KUSARI</p>
-                    <h2>CREACIONES</h2>
-                    <span class="heading-line"></span>
-                    <p class="section-description">
-                        Piezas pensadas para quienes prefieren vestir su propia historia.
-                    </p>
-                </div>
-
-
-                <div class="product-grid">
-
-                    <!-- PRODUCTO 1 -->
-                    <article class="product-card product-card--1">
-
-                        <div class="product-image">
-                            <img src="https://placehold.co/900x1100/111111/F5C451?text=Cartera+Nudo+Oro"
-                                 alt="Cartera Nudo Oro">
-
-                            <span class="product-tag">NUEVO</span>
-                        </div>
-
-                        <div class="product-info">
-                            <span class="product-category">ACCESORIOS</span>
-                            <h3>Cartera Nudo Oro</h3>
-                            <p>Textura artesanal y detalles metálicos.</p>
-
-                            <div class="product-bottom">
-                                <strong>$48.000</strong>
-
-                                <div class="product-actions">
-                                    <a href="#producto-1" class="view-button">VER</a>
-                                    <label for="add-1" class="add-button">
-                                        <span>AGREGAR</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUCTO 2 -->
-                    <article class="product-card product-card--2">
-
-                        <div class="product-image">
-                            <img src="https://placehold.co/900x1100/111111/26D9D1?text=Collar+Turquesa+Solar"
-                                 alt="Collar Turquesa Solar">
-
-                            <span class="product-tag product-tag--turquoise">KUSARI</span>
-                        </div>
-
-                        <div class="product-info">
-                            <span class="product-category">JOYERÍA</span>
-                            <h3>Collar Turquesa Solar</h3>
-                            <p>Piedra turquesa y cadena de inspiración industrial.</p>
-
-                            <div class="product-bottom">
-                                <strong>$32.000</strong>
-
-                                <div class="product-actions">
-                                    <a href="#producto-2" class="view-button">VER</a>
-                                    <label for="add-2" class="add-button">
-                                        <span>AGREGAR</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUCTO 3 -->
-                    <article class="product-card product-card--3">
-
-                        <div class="product-image">
-                            <img src="https://placehold.co/900x1100/111111/FF2A9D?text=Pulsera+Fucsia+Mineral"
-                                 alt="Pulsera Fucsia Mineral">
-
-                            <span class="product-tag product-tag--pink">POP</span>
-                        </div>
-
-                        <div class="product-info">
-                            <span class="product-category">JOYERÍA</span>
-                            <h3>Pulsera Fucsia Mineral</h3>
-                            <p>Color intenso, metal y piedra en una sola pieza.</p>
-
-                            <div class="product-bottom">
-                                <strong>$18.000</strong>
-
-                                <div class="product-actions">
-                                    <a href="#producto-3" class="view-button">VER</a>
-                                    <label for="add-3" class="add-button">
-                                        <span>AGREGAR</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUCTO 4 -->
-                    <article class="product-card product-card--4">
-
-                        <div class="product-image">
-                            <img src="https://placehold.co/900x1100/111111/FFFFFF?text=Remera+Pop+Kusari"
-                                 alt="Remera Pop Kusari">
-
-                            <span class="product-tag">LIMITADA</span>
-                        </div>
-
-                        <div class="product-info">
-                            <span class="product-category">INDUMENTARIA</span>
-                            <h3>Remera Pop Kusari</h3>
-                            <p>Algodón premium con gráfica de alto contraste.</p>
-
-                            <div class="product-bottom">
-                                <strong>$29.000</strong>
-
-                                <div class="product-actions">
-                                    <a href="#producto-4" class="view-button">VER</a>
-                                    <label for="add-4" class="add-button">
-                                        <span>AGREGAR</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUCTO 5 -->
-                    <article class="product-card product-card--5">
-
-                        <div class="product-image">
-                            <img src="https://placehold.co/900x1100/111111/F5C451?text=Pollera+Metal+Nomade"
-                                 alt="Pollera Metal Nómade">
-
-                            <span class="product-tag">KUSARI</span>
-                        </div>
-
-                        <div class="product-info">
-                            <span class="product-category">INDUMENTARIA</span>
-                            <h3>Pollera Metal Nómade</h3>
-                            <p>Movimiento, textura y brillo metálico.</p>
-
-                            <div class="product-bottom">
-                                <strong>$56.000</strong>
-
-                                <div class="product-actions">
-                                    <a href="#producto-5" class="view-button">VER</a>
-                                    <label for="add-5" class="add-button">
-                                        <span>AGREGAR</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUCTO 6 -->
-                    <article class="product-card product-card--6">
-
-                        <div class="product-image">
-                            <img src="https://placehold.co/900x1100/111111/26D9D1?text=Top+Macrame+Aura"
-                                 alt="Top Macramé Aura">
-
-                            <span class="product-tag product-tag--turquoise">ARTESANAL</span>
-                        </div>
-
-                        <div class="product-info">
-                            <span class="product-category">INDUMENTARIA</span>
-                            <h3>Top Macramé Aura</h3>
-                            <p>Trama manual y silueta ligera.</p>
-
-                            <div class="product-bottom">
-                                <strong>$39.000</strong>
-
-                                <div class="product-actions">
-                                    <a href="#producto-6" class="view-button">VER</a>
-                                    <label for="add-6" class="add-button">
-                                        <span>AGREGAR</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUCTO 7 -->
-                    <article class="product-card product-card--7">
-
-                        <div class="product-image">
-                            <img src="https://placehold.co/900x1100/111111/26D9D1?text=Cartera+Turquesa+Prisma"
-                                 alt="Cartera Turquesa Prisma">
-
-                            <span class="product-tag product-tag--turquoise">NUEVO</span>
-                        </div>
-
-                        <div class="product-info">
-                            <span class="product-category">ACCESORIOS</span>
-                            <h3>Cartera Turquesa Prisma</h3>
-                            <p>Volumen geométrico y detalles hechos a mano.</p>
-
-                            <div class="product-bottom">
-                                <strong>$52.000</strong>
-
-                                <div class="product-actions">
-                                    <a href="#producto-7" class="view-button">VER</a>
-                                    <label for="add-7" class="add-button">
-                                        <span>AGREGAR</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUCTO 8 -->
-                    <article class="product-card product-card--8">
-
-                        <div class="product-image">
-                            <img src="https://placehold.co/900x1100/111111/F5C451?text=Collar+Cadena+Solar"
-                                 alt="Collar Cadena Solar">
-
-                            <span class="product-tag">METAL</span>
-                        </div>
-
-                        <div class="product-info">
-                            <span class="product-category">JOYERÍA</span>
-                            <h3>Collar Cadena Solar</h3>
-                            <p>Cadena dorada con presencia escultórica.</p>
-
-                            <div class="product-bottom">
-                                <strong>$35.000</strong>
-
-                                <div class="product-actions">
-                                    <a href="#producto-8" class="view-button">VER</a>
-                                    <label for="add-8" class="add-button">
-                                        <span>AGREGAR</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUCTO 9 -->
-                    <article class="product-card product-card--9">
-
-                        <div class="product-image">
-                            <img src="https://placehold.co/900x1100/111111/FF2A9D?text=Pulsera+Onix+Pop"
-                                 alt="Pulsera Ónix Pop">
-
-                            <span class="product-tag product-tag--pink">POP</span>
-                        </div>
-
-                        <div class="product-info">
-                            <span class="product-category">JOYERÍA</span>
-                            <h3>Pulsera Ónix Pop</h3>
-                            <p>Ónix negro con acentos fucsia.</p>
-
-                            <div class="product-bottom">
-                                <strong>$21.000</strong>
-
-                                <div class="product-actions">
-                                    <a href="#producto-9" class="view-button">VER</a>
-                                    <label for="add-9" class="add-button">
-                                        <span>AGREGAR</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUCTO 10 -->
-                    <article class="product-card product-card--10">
-
-                        <div class="product-image">
-                            <img src="https://placehold.co/900x1100/111111/FFFFFF?text=Remera+Kusari+Shine"
-                                 alt="Remera Kusari Shine">
-
-                            <span class="product-tag">SHINE</span>
-                        </div>
-
-                        <div class="product-info">
-                            <span class="product-category">INDUMENTARIA</span>
-                            <h3>Remera Kusari Shine</h3>
-                            <p>Diseño minimalista con brillo metalizado.</p>
-
-                            <div class="product-bottom">
-                                <strong>$31.000</strong>
-
-                                <div class="product-actions">
-                                    <a href="#producto-10" class="view-button">VER</a>
-                                    <label for="add-10" class="add-button">
-                                        <span>AGREGAR</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUCTO 11 -->
-                    <article class="product-card product-card--11">
-
-                        <div class="product-image">
-                            <img src="https://placehold.co/900x1100/111111/FF2A9D?text=Pollera+Fucsia+Ritual"
-                                 alt="Pollera Fucsia Ritual">
-
-                            <span class="product-tag product-tag--pink">POP</span>
-                        </div>
-
-                        <div class="product-info">
-                            <span class="product-category">INDUMENTARIA</span>
-                            <h3>Pollera Fucsia Ritual</h3>
-                            <p>Color vibrante y caída con movimiento.</p>
-
-                            <div class="product-bottom">
-                                <strong>$59.000</strong>
-
-                                <div class="product-actions">
-                                    <a href="#producto-11" class="view-button">VER</a>
-                                    <label for="add-11" class="add-button">
-                                        <span>AGREGAR</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUCTO 12 -->
-                    <article class="product-card product-card--12">
-
-                        <div class="product-image">
-                            <img src="https://placehold.co/900x1100/111111/F5C451?text=Top+Dorado+Trama"
-                                 alt="Top Dorado Trama">
-
-                            <span class="product-tag">ÚNICO</span>
-                        </div>
-
-                        <div class="product-info">
-                            <span class="product-category">INDUMENTARIA</span>
-                            <h3>Top Dorado Trama</h3>
-                            <p>Macramé, brillo y estructura artesanal.</p>
-
-                            <div class="product-bottom">
-                                <strong>$43.000</strong>
-
-                                <div class="product-actions">
-                                    <a href="#producto-12" class="view-button">VER</a>
-                                    <label for="add-12" class="add-button">
-                                        <span>AGREGAR</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                    </article>
-
-                </div>
-
-            </section>
-
-
-            <!-- =================================
-                 SOBRE KUSARI
-            ================================== -->
-
-            <section id="nosotros" class="about-section">
-
-                <div class="about-pattern"></div>
-
-                <div class="about-content">
-
-                    <p class="eyebrow">LA IDEA DETRÁS DE KUSARI</p>
-
-                    <h2>
-                        NO SEGUIMOS<br>
-                        <span>REGLAS.</span>
-                    </h2>
-
-                    <p>
-                        Estilo Kusari nace del encuentro entre lo artesanal,
-                        lo urbano y lo inesperado.
-                    </p>
-
-                    <p>
-                        Cada pieza busca combinar materiales, colores,
-                        texturas y formas para crear algo que tenga
-                        identidad propia.
-                    </p>
-
-                    <a href="#productos" class="outline-button">
-                        VER LA COLECCIÓN
-                    </a>
-
-                </div>
-
-                <div class="about-art">
-
-                    <div class="about-ring"></div>
-
-                    <div class="about-knot">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-
-                    <strong>KUSARI</strong>
-
-                </div>
-
-            </section>
-
-        </main>
-
-
-        <!-- =====================================
-             FOOTER
-        ====================================== -->
-
-        <footer class="site-footer">
-
-            <div class="footer-brand">
-                <span>ESTILO</span>
-                <strong>KUSARI</strong>
-            </div>
-
-            <div class="footer-links">
-                <a href="#inicio">Inicio</a>
-                <a href="#productos">Productos</a>
-                <a href="#nosotros">Nosotros</a>
-            </div>
-
-            <div class="footer-social">
-                <a href="#" aria-label="Instagram">IG</a>
-                <a href="#" aria-label="TikTok">TK</a>
-                <a href="#" aria-label="Pinterest">PI</a>
-            </div>
-
-            <p class="footer-copy">
-                © 2026 ESTILO KUSARI · CREACIONES ÚNICAS
+            <p>
+              Nudo y contraste,
+              textura artesanal.
             </p>
 
-        </footer>
+          </div>
+
+        </article>
 
 
-        <!-- =====================================
-             FONDO DEL CARRITO
-        ====================================== -->
+        <!-- 03 -->
 
-        <label for="cart-toggle" class="cart-backdrop"></label>
+        <article class="card">
 
+          <span class="tag turquesa">
+            KUSARI
+          </span>
 
-        <!-- =====================================
-             CARRITO LATERAL
-        ====================================== -->
+          <div class="image-wrap">
+            <img
+              src="images/collar-macrame-verde.jpg.jpg"
+              alt="Collar macramé verde"
+            >
+          </div>
 
-        <aside class="cart-drawer" aria-label="Carrito de compras">
+          <div class="card-info">
 
-            <div class="cart-header">
+            <span>
+              JOYERÍA
+            </span>
 
-                <div>
-                    <span class="eyebrow">TU SELECCIÓN</span>
-                    <h2>CARRITO</h2>
-                </div>
+            <h3>
+              Collar Macramé Verde
+            </h3>
 
-                <label for="cart-toggle" class="cart-close">
-                    ×
-                </label>
+            <p>
+              Piedra y cadena de inspiración
+              industrial.
+            </p>
 
-            </div>
+          </div>
 
-
-            <div class="cart-content">
-
-                <div class="cart-empty">
-                    <span class="empty-icon">◇</span>
-                    <h3>EL CAOS ESTÁ VACÍO</h3>
-                    <p>Elegí una creación y empezá a armar tu selección.</p>
-                </div>
-
-
-                <!-- ITEM 1 -->
-                <div class="cart-item cart-item--1">
-                    <img src="https://placehold.co/160x160/111111/F5C451?text=01" alt="">
-                    <div>
-                        <span>ACCESORIOS</span>
-                        <h3>Cartera Nudo Oro</h3>
-                        <strong>$48.000</strong>
-                        <div class="quantity">
-                            <span>−</span>
-                            <b>1</b>
-                            <span>+</span>
-                        </div>
-                    </div>
-                </div>
+        </article>
 
 
-                <!-- ITEM 2 -->
-                <div class="cart-item cart-item--2">
-                    <img src="https://placehold.co/160x160/111111/26D9D1?text=02" alt="">
-                    <div>
-                        <span>JOYERÍA</span>
-                        <h3>Collar Turquesa Solar</h3>
-                        <strong>$32.000</strong>
-                        <div class="quantity">
-                            <span>−</span>
-                            <b>1</b>
-                            <span>+</span>
-                        </div>
-                    </div>
-                </div>
+        <!-- 04 -->
+
+        <article class="card">
+
+          <span class="tag pop">
+            POP
+          </span>
+
+          <div class="image-wrap">
+            <img
+              src="images/collar-puntas.jpg.jpg"
+              alt="Collar de puntas"
+            >
+          </div>
+
+          <div class="card-info">
+
+            <span>
+              JOYERÍA
+            </span>
+
+            <h3>
+              Collar Puntas Metal
+            </h3>
+
+            <p>
+              Presencia escultórica
+              y brillo.
+            </p>
+
+          </div>
+
+        </article>
 
 
-                <!-- ITEM 3 -->
-                <div class="cart-item cart-item--3">
-                    <img src="https://placehold.co/160x160/111111/FF2A9D?text=03" alt="">
-                    <div>
-                        <span>JOYERÍA</span>
-                        <h3>Pulsera Fucsia Mineral</h3>
-                        <strong>$18.000</strong>
-                        <div class="quantity">
-                            <span>−</span>
-                            <b>1</b>
-                            <span>+</span>
-                        </div>
-                    </div>
-                </div>
+        <!-- 05 -->
+
+        <article class="card">
+
+          <span class="tag">
+            ARTESANAL
+          </span>
+
+          <div class="image-wrap">
+            <img
+              src="images/cartera-macrame.jpg.jpg"
+              alt="Cartera macramé"
+            >
+          </div>
+
+          <div class="card-info">
+
+            <span>
+              ACCESORIOS
+            </span>
+
+            <h3>
+              Cartera Macramé Nudo Oro
+            </h3>
+
+            <p>
+              Detalles metálicos y trama
+              hecha a mano.
+            </p>
+
+          </div>
+
+        </article>
 
 
-                <!-- ITEM 4 -->
-                <div class="cart-item cart-item--4">
-                    <img src="https://placehold.co/160x160/111111/FFFFFF?text=04" alt="">
-                    <div>
-                        <span>INDUMENTARIA</span>
-                        <h3>Remera Pop Kusari</h3>
-                        <strong>$29.000</strong>
-                        <div class="quantity">
-                            <span>−</span>
-                            <b>1</b>
-                            <span>+</span>
-                        </div>
-                    </div>
-                </div>
+        <!-- 06 -->
+
+        <article class="card">
+
+          <span class="tag turquesa">
+            TURQUESA
+          </span>
+
+          <div class="image-wrap">
+            <img
+              src="images/collar-pequino.jpg.jpg"
+              alt="Collar pequeño turquesa"
+            >
+          </div>
+
+          <div class="card-info">
+
+            <span>
+              JOYERÍA
+            </span>
+
+            <h3>
+              Collar Turquesa Prisma
+            </h3>
+
+            <p>
+              Volumen geométrico
+              y detalles únicos.
+            </p>
+
+          </div>
+
+        </article>
 
 
-                <!-- ITEM 5 -->
-                <div class="cart-item cart-item--5">
-                    <img src="https://placehold.co/160x160/111111/F5C451?text=05" alt="">
-                    <div>
-                        <span>INDUMENTARIA</span>
-                        <h3>Pollera Metal Nómade</h3>
-                        <strong>$56.000</strong>
-                        <div class="quantity">
-                            <span>−</span>
-                            <b>1</b>
-                            <span>+</span>
-                        </div>
-                    </div>
-                </div>
+        <!-- 07 -->
+
+        <article class="card">
+
+          <span class="tag">
+            METAL
+          </span>
+
+          <div class="image-wrap">
+            <img
+              src="images/collarmacrame.jpg.jpg"
+              alt="Collar macramé"
+            >
+          </div>
+
+          <div class="card-info">
+
+            <span>
+              JOYERÍA
+            </span>
+
+            <h3>
+              Collar Macramé Solar
+            </h3>
+
+            <p>
+              Cadena dorada con
+              trama nómade.
+            </p>
+
+          </div>
+
+        </article>
 
 
-                <!-- ITEM 6 -->
-                <div class="cart-item cart-item--6">
-                    <img src="https://placehold.co/160x160/111111/26D9D1?text=06" alt="">
-                    <div>
-                        <span>INDUMENTARIA</span>
-                        <h3>Top Macramé Aura</h3>
-                        <strong>$39.000</strong>
-                        <div class="quantity">
-                            <span>−</span>
-                            <b>1</b>
-                            <span>+</span>
-                        </div>
-                    </div>
-                </div>
+        <!-- 08 -->
+
+        <article class="card">
+
+          <span class="tag pop">
+            POP
+          </span>
+
+          <div class="image-wrap">
+            <img
+              src="images/top-verde.jpg.jpg"
+              alt="Top verde"
+            >
+          </div>
+
+          <div class="card-info">
+
+            <span>
+              INDUMENTARIA
+            </span>
+
+            <h3>
+              Top Verde Aura
+            </h3>
+
+            <p>
+              Trama manual y
+              silueta ligera.
+            </p>
+
+          </div>
+
+        </article>
 
 
-                <!-- ITEM 7 -->
-                <div class="cart-item cart-item--7">
-                    <img src="https://placehold.co/160x160/111111/26D9D1?text=07" alt="">
-                    <div>
-                        <span>ACCESORIOS</span>
-                        <h3>Cartera Turquesa Prisma</h3>
-                        <strong>$52.000</strong>
-                        <div class="quantity">
-                            <span>−</span>
-                            <b>1</b>
-                            <span>+</span>
-                        </div>
-                    </div>
-                </div>
+        <!-- 09 -->
+
+        <article class="card">
+
+          <span class="tag">
+            KUSARI
+          </span>
+
+          <div class="image-wrap">
+            <img
+              src="images/vestido-crema-macrame.jpg.jpg"
+              alt="Vestido crema macramé"
+            >
+          </div>
+
+          <div class="card-info">
+
+            <span>
+              INDUMENTARIA
+            </span>
+
+            <h3>
+              Vestido Crema Macramé
+            </h3>
+
+            <p>
+              Movimiento, textura
+              y calidez artesanal.
+            </p>
+
+          </div>
+
+        </article>
 
 
-                <!-- ITEM 8 -->
-                <div class="cart-item cart-item--8">
-                    <img src="https://placehold.co/160x160/111111/F5C451?text=08" alt="">
-                    <div>
-                        <span>JOYERÍA</span>
-                        <h3>Collar Cadena Solar</h3>
-                        <strong>$35.000</strong>
-                        <div class="quantity">
-                            <span>−</span>
-                            <b>1</b>
-                            <span>+</span>
-                        </div>
-                    </div>
-                </div>
+        <!-- 10 -->
+
+        <article class="card">
+
+          <span class="tag nuevo">
+            ÚNICO
+          </span>
+
+          <div class="image-wrap">
+            <img
+              src="images/vestidocompleto-rosa.jpg.jpg"
+              alt="Vestido completo rosa"
+            >
+          </div>
+
+          <div class="card-info">
+
+            <span>
+              INDUMENTARIA
+            </span>
+
+            <h3>
+              Top Dorado Trama
+            </h3>
+
+            <p>
+              Macramé, brillo y
+              estructura artesanal.
+            </p>
+
+          </div>
+
+        </article>
 
 
-                <!-- ITEM 9 -->
-                <div class="cart-item cart-item--9">
-                    <img src="https://placehold.co/160x160/111111/FF2A9D?text=09" alt="">
-                    <div>
-                        <span>JOYERÍA</span>
-                        <h3>Pulsera Ónix Pop</h3>
-                        <strong>$21.000</strong>
-                        <div class="quantity">
-                            <span>−</span>
-                            <b>1</b>
-                            <span>+</span>
-                        </div>
-                    </div>
-                </div>
+      </div>
+
+    </section>
 
 
-                <!-- ITEM 10 -->
-                <div class="cart-item cart-item--10">
-                    <img src="https://placehold.co/160x160/111111/FFFFFF?text=10" alt="">
-                    <div>
-                        <span>INDUMENTARIA</span>
-                        <h3>Remera Kusari Shine</h3>
-                        <strong>$31.000</strong>
-                        <div class="quantity">
-                            <span>−</span>
-                            <b>1</b>
-                            <span>+</span>
-                        </div>
-                    </div>
-                </div>
+    <!-- =========================
+         MANIFIESTO
+    ========================== -->
+
+    <section
+      id="manifiesto"
+      class="manifiesto"
+    >
+
+      <div class="manifesto-title">
+
+        <span class="section-label dark">
+          MANIFIESTO · KUSARI
+        </span>
+
+        <h2>
+          NO SEGUIMOS
+          <br>
+          REGLAS.
+        </h2>
+
+      </div>
 
 
-                <!-- ITEM 11 -->
-                <div class="cart-item cart-item--11">
-                    <img src="https://placehold.co/160x160/111111/FF2A9D?text=11" alt="">
-                    <div>
-                        <span>INDUMENTARIA</span>
-                        <h3>Pollera Fucsia Ritual</h3>
-                        <strong>$59.000</strong>
-                        <div class="quantity">
-                            <span>−</span>
-                            <b>1</b>
-                            <span>+</span>
-                        </div>
-                    </div>
-                </div>
+      <div class="manifesto-content">
+
+        <p>
+          Estilo Kusari nace del encuentro entre
+          lo artesanal, lo urbano y lo inesperado.
+          Cada pieza busca combinar materiales,
+          colores, texturas y formas para crear
+          algo que tenga identidad propia.
+        </p>
+
+        <a
+          href="#coleccion"
+          class="btn outline"
+        >
+          VER LA COLECCIÓN
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
 
 
-                <!-- ITEM 12 -->
-                <div class="cart-item cart-item--12">
-                    <img src="https://placehold.co/160x160/111111/F5C451?text=12" alt="">
-                    <div>
-                        <span>INDUMENTARIA</span>
-                        <h3>Top Dorado Trama</h3>
-                        <strong>$43.000</strong>
-                        <div class="quantity">
-                            <span>−</span>
-                            <b>1</b>
-                            <span>+</span>
-                        </div>
-                    </div>
-                </div>
+  <!-- =========================
+       FOOTER
+  ========================== -->
 
-            </div>
+  <footer id="contacto">
 
-
-            <div class="cart-footer">
-
-                <div class="cart-total">
-                    <span>SELECCIÓN KUSARI</span>
-                    <strong>LISTA</strong>
-                </div>
-
-                <a href="#inicio" class="checkout-button">
-                    CONTINUAR
-                </a>
-
-            </div>
-
-        </aside>
-
+    <div class="footer-logo">
+      KUSARI
     </div>
 
+    <div class="footer-info">
+      <p>
+        Hecho en Salta · Envíos a todo el país
+      </p>
 
-    <!-- =========================================
-         MODALES DE PRODUCTOS
-    ========================================== -->
-
-
-    <!-- MODAL 1 -->
-    <div id="producto-1" class="product-modal">
-        <a href="#productos" class="modal-background"></a>
-
-        <div class="modal-box">
-            <a href="#productos" class="modal-close">×</a>
-
-            <img src="https://placehold.co/900x1000/111111/F5C451?text=Cartera+Nudo+Oro"
-                 alt="Cartera Nudo Oro">
-
-            <div class="modal-info">
-                <span>ACCESORIOS</span>
-                <h2>Cartera Nudo Oro</h2>
-                <p>
-                    Una pieza de inspiración artesanal con detalles metálicos
-                    y textura de nudo.
-                </p>
-                <strong>$48.000</strong>
-                <label for="add-1" class="modal-add">AGREGAR AL CARRITO</label>
-            </div>
-        </div>
+      <p>
+        Piezas únicas
+      </p>
     </div>
 
-
-    <!-- MODAL 2 -->
-    <div id="producto-2" class="product-modal">
-        <a href="#productos" class="modal-background"></a>
-
-        <div class="modal-box">
-            <a href="#productos" class="modal-close">×</a>
-
-            <img src="https://placehold.co/900x1000/111111/26D9D1?text=Collar+Turquesa+Solar"
-                 alt="Collar Turquesa Solar">
-
-            <div class="modal-info">
-                <span>JOYERÍA</span>
-                <h2>Collar Turquesa Solar</h2>
-                <p>
-                    Turquesa, metal y una estética solar para una pieza
-                    que transforma cualquier look.
-                </p>
-                <strong>$32.000</strong>
-                <label for="add-2" class="modal-add">AGREGAR AL CARRITO</label>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- MODAL 3 -->
-    <div id="producto-3" class="product-modal">
-        <a href="#productos" class="modal-background"></a>
-
-        <div class="modal-box">
-            <a href="#productos" class="modal-close">×</a>
-
-            <img src="https://placehold.co/900x1000/111111/FF2A9D?text=Pulsera+Fucsia+Mineral"
-                 alt="Pulsera Fucsia Mineral">
-
-            <div class="modal-info">
-                <span>JOYERÍA</span>
-                <h2>Pulsera Fucsia Mineral</h2>
-                <p>
-                    Una mezcla de color pop, piedra y metal pensada
-                    para destacar.
-                </p>
-                <strong>$18.000</strong>
-                <label for="add-3" class="modal-add">AGREGAR AL CARRITO</label>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- MODAL 4 -->
-    <div id="producto-4" class="product-modal">
-        <a href="#productos" class="modal-background"></a>
-
-        <div class="modal-box">
-            <a href="#productos" class="modal-close">×</a>
-
-            <img src="https://placehold.co/900x1000/111111/FFFFFF?text=Remera+Pop+Kusari"
-                 alt="Remera Pop Kusari">
-
-            <div class="modal-info">
-                <span>INDUMENTARIA</span>
-                <h2>Remera Pop Kusari</h2>
-                <p>
-                    Algodón premium y gráfica de alto contraste
-                    para una presencia urbana.
-                </p>
-                <strong>$29.000</strong>
-                <label for="add-4" class="modal-add">AGREGAR AL CARRITO</label>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- MODAL 5 -->
-    <div id="producto-5" class="product-modal">
-        <a href="#productos" class="modal-background"></a>
-
-        <div class="modal-box">
-            <a href="#productos" class="modal-close">×</a>
-
-            <img src="https://placehold.co/900x1000/111111/F5C451?text=Pollera+Metal+Nomade"
-                 alt="Pollera Metal Nómade">
-
-            <div class="modal-info">
-                <span>INDUMENTARIA</span>
-                <h2>Pollera Metal Nómade</h2>
-                <p>
-                    Una silueta con movimiento y reflejos metálicos
-                    inspirada en la estética Kusari.
-                </p>
-                <strong>$56.000</strong>
-                <label for="add-5" class="modal-add">AGREGAR AL CARRITO</label>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- MODAL 6 -->
-    <div id="producto-6" class="product-modal">
-        <a href="#productos" class="modal-background"></a>
-
-        <div class="modal-box">
-            <a href="#productos" class="modal-close">×</a>
-
-            <img src="https://placehold.co/900x1000/111111/26D9D1?text=Top+Macrame+Aura"
-                 alt="Top Macramé Aura">
-
-            <div class="modal-info">
-                <span>INDUMENTARIA</span>
-                <h2>Top Macramé Aura</h2>
-                <p>
-                    Trama manual, textura artesanal y una silueta
-                    ligera para usar de muchas formas.
-                </p>
-                <strong>$39.000</strong>
-                <label for="add-6" class="modal-add">AGREGAR AL CARRITO</label>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- MODAL 7 -->
-    <div id="producto-7" class="product-modal">
-        <a href="#productos" class="modal-background"></a>
-
-        <div class="modal-box">
-            <a href="#productos" class="modal-close">×</a>
-
-            <img src="https://placehold.co/900x1000/111111/26D9D1?text=Cartera+Turquesa+Prisma"
-                 alt="Cartera Turquesa Prisma">
-
-            <div class="modal-info">
-                <span>ACCESORIOS</span>
-                <h2>Cartera Turquesa Prisma</h2>
-                <p>
-                    Volumen geométrico, color mineral y detalles
-                    realizados de forma artesanal.
-                </p>
-                <strong>$52.000</strong>
-                <label for="add-7" class="modal-add">AGREGAR AL CARRITO</label>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- MODAL 8 -->
-    <div id="producto-8" class="product-modal">
-        <a href="#productos" class="modal-background"></a>
-
-        <div class="modal-box">
-            <a href="#productos" class="modal-close">×</a>
-
-            <img src="https://placehold.co/900x1000/111111/F5C451?text=Collar+Cadena+Solar"
-                 alt="Collar Cadena Solar">
-
-            <div class="modal-info">
-                <span>JOYERÍA</span>
-                <h2>Collar Cadena Solar</h2>
-                <p>
-                    Una cadena dorada de inspiración escultórica
-                    para transformar un outfit.
-                </p>
-                <strong>$35.000</strong>
-                <label for="add-8" class="modal-add">AGREGAR AL CARRITO</label>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- MODAL 9 -->
-    <div id="producto-9" class="product-modal">
-        <a href="#productos" class="modal-background"></a>
-
-        <div class="modal-box">
-            <a href="#productos" class="modal-close">×</a>
-
-            <img src="https://placehold.co/900x1000/111111/FF2A9D?text=Pulsera+Onix+Pop"
-                 alt="Pulsera Ónix Pop">
-
-            <div class="modal-info">
-                <span>JOYERÍA</span>
-                <h2>Pulsera Ónix Pop</h2>
-                <p>
-                    Ónix negro, detalles fucsia y una estética
-                    pop para todos los días.
-                </p>
-                <strong>$21.000</strong>
-                <label for="add-9" class="modal-add">AGREGAR AL CARRITO</label>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- MODAL 10 -->
-    <div id="producto-10" class="product-modal">
-        <a href="#productos" class="modal-background"></a>
-
-        <div class="modal-box">
-            <a href="#productos" class="modal-close">×</a>
-
-            <img src="https://placehold.co/900x1000/111111/FFFFFF?text=Remera+Kusari+Shine"
-                 alt="Remera Kusari Shine">
-
-            <div class="modal-info">
-                <span>INDUMENTARIA</span>
-                <h2>Remera Kusari Shine</h2>
-                <p>
-                    Diseño limpio con detalles de brillo metalizado
-                    para darle otra dimensión al look.
-                </p>
-                <strong>$31.000</strong>
-                <label for="add-10" class="modal-add">AGREGAR AL CARRITO</label>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- MODAL 11 -->
-    <div id="producto-11" class="product-modal">
-        <a href="#productos" class="modal-background"></a>
-
-        <div class="modal-box">
-            <a href="#productos" class="modal-close">×</a>
-
-            <img src="https://placehold.co/900x1000/111111/FF2A9D?text=Pollera+Fucsia+Ritual"
-                 alt="Pollera Fucsia Ritual">
-
-            <div class="modal-info">
-                <span>INDUMENTARIA</span>
-                <h2>Pollera Fucsia Ritual</h2>
-                <p>
-                    Color vibrante y una caída pensada para acompañar
-                    el movimiento.
-                </p>
-                <strong>$59.000</strong>
-                <label for="add-11" class="modal-add">AGREGAR AL CARRITO</label>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- MODAL 12 -->
-    <div id="producto-12" class="product-modal">
-        <a href="#productos" class="modal-background"></a>
-
-        <div class="modal-box">
-            <a href="#productos" class="modal-close">×</a>
-
-            <img src="https://placehold.co/900x1000/111111/F5C451?text=Top+Dorado+Trama"
-                 alt="Top Dorado Trama">
-
-            <div class="modal-info">
-                <span>INDUMENTARIA</span>
-                <h2>Top Dorado Trama</h2>
-                <p>
-                    Macramé, brillo y estructura artesanal en
-                    una creación fuera de serie.
-                </p>
-                <strong>$43.000</strong>
-                <label for="add-12" class="modal-add">AGREGAR AL CARRITO</label>
-            </div>
-        </div>
-    </div>
+  </footer>
 
 </body>
+
 </html>
+```
