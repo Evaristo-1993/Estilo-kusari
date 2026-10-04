@@ -16,7 +16,12 @@
 <meta property="og:image:type" content="image/jpeg">
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-</head>
+<style>
+@media (max-width:700px){
+  .header{height:auto!important; flex-wrap:wrap!important; padding:10px!important}
+  .header .nav{width:100%!important; display:flex!important; flex-wrap:wrap!important; justify-content:center!important; gap:12px!important}
+}
+</style>
 </head>
 <body>
     <input type="checkbox" id="cart-toggle" hidden>
@@ -35,7 +40,7 @@
         <nav class="nav">
             <a href="#catalogo">COLECCIÓN</a>
             <a href="#manifiesto">MANIFIESTO</a>
-                        <a href="https://www.instagram.com/_astra.4rt3_/" target="_blank" rel="noopener" class="btn-ig" style="text-decoration:none; border:1px solid currentColor; padding:6px 12px; border-radius:999px; font-size:12px; font-weight:700; margin-right:8px;">IG</a>
+            <a href="https://www.instagram.com/_astra.4rt3_/" target="_blank" rel="noopener" class="btn-ig" style="text-decoration:none; border:1px solid currentColor; padding:6px 12px; border-radius:999px; font-size:12px; font-weight:700; margin-right:8px;">REDES SOCIALES</a>
             <label for="cart-toggle" class="btn-cart">CARRITO</label>
         </nav>
     </header>
@@ -67,7 +72,7 @@
     <section class="hero">
         <div class="hero-text">
             <h1>ESTILO<br>KUSARI<br><span>HECHO PARA DESTACAR</span></h1>
-            <p>Vestir <strong>creaciones únicas</strong>, hechas a mano, con metal, turquesa y trama nómade. Cada pieza es irrepetible.</p>
+            <p>Vestir <strong>creaciones únicas</strong>, hechas a mano. Cada pieza es irrepetible.</p>
             <a href="#catalogo" class="btn-pop pulse">EXPLORAR CREACIONES</a>
         </div>
         <div class="hero-visual"><div class="macrame-ball"></div></div>
@@ -104,7 +109,7 @@
                 <div class="card-actions"><a href="#prod-3" class="btn-eye">VER</a><label for="add-3" class="btn-add">+ CARRITO</label></div>
             </article>
             <article class="card" data-cat="carteras">
-                <div class="card-img" style="background-image:url('images/cartera-macrame.jpg')"><span class="tag">ARTESANAL</span></div>
+                <div class="card-img" style="background-image:url('images/cartera-macrame.jpg')"><span class="tag">KUSARI</span></div>
                 <div class="card-info"><h3>Cartera Macramé Nudo Oro</h3><p>Detalles metálicos y trama hecha a mano.</p><span>$85.000</span></div>
                 <div class="card-actions"><a href="#prod-4" class="btn-eye">VER</a><label for="add-4" class="btn-add">+ CARRITO</label></div>
             </article>
@@ -114,7 +119,7 @@
                 <div class="card-actions"><a href="#prod-5" class="btn-eye">VER</a><label for="add-5" class="btn-add">+ CARRITO</label></div>
             </article>
             <article class="card" data-cat="joyas">
-                <div class="card-img" style="background-image:url('images/collarmacrame.jpg')"><span class="tag">METAL</span></div>
+                <div class="card-img" style="background-image:url('images/collarmacrame.jpg')"><span class="tag metal">METAL</span></div>
                 <div class="card-info"><h3>Collar Macramé Solar</h3><p>Cadena dorada con trama nómade.</p><span>$29.000</span></div>
                 <div class="card-actions"><a href="#prod-6" class="btn-eye">VER</a><label for="add-6" class="btn-add">+ CARRITO</label></div>
             </article>
@@ -129,7 +134,7 @@
                 <div class="card-actions"><a href="#prod-8" class="btn-eye">VER</a><label for="add-8" class="btn-add">+ CARRITO</label></div>
             </article>
             <article class="card" data-cat="ropa">
-                <div class="card-img" style="background-image:url('images/vestidocompleto-rosa.jpg')"><span class="tag nuevo">ÚNICO</span></div>
+                <div class="card-img" style="background-image:url('images/vestidocompleto-rosa.jpg')"><span class="tag">ÚNICO</span></div>
                 <div class="card-info"><h3>Vestido Completo Rosa</h3><p>Macramé, brillo y estructura artesanal.</p><span>$89.000</span></div>
                 <div class="card-actions"><a href="#prod-9" class="btn-eye">VER</a><label for="add-9" class="btn-add">+ CARRITO</label></div>
             </article>
@@ -154,7 +159,7 @@
             <p class="detalle">Pop art • Macramé • Metal • Piedra • Hecho en Salta</p>
         </div>
     </section>
-        <footer class="footer"><p>© 2026 ESTILO KUSARI — Salta, Argentina. Hecho a mano con <span class="rosa">♥</span> — <a href="https://www.instagram.com/_astra.4rt3_/" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline; font-weight:700;">@_astra.4rt3_ en Instagram</a></p></footer>
+    <footer class="footer"><p>© 2026 ESTILO KUSARI — Salta, Argentina. Hecho a mano con <span class="rosa">♥</span> — <a href="https://www.instagram.com/_astra.4rt3_/" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline; font-weight:700;">@_astra.4rt3_ en Instagram</a></p></footer>
 
 <style>
   #cart-drawer img, .cart-drawer img, .cart-item img {
@@ -192,7 +197,6 @@
       const precio = card?.querySelector('.card-info span, .price')?.innerText?.trim() || '';
       return {nombre, precio};
     }
-    // 1) En cada card, agregar boton WSP si no existe
     document.querySelectorAll('.card').forEach(card => {
       const actions = card.querySelector('.card-actions');
       if(!actions) return;
@@ -207,7 +211,6 @@
       });
       actions.appendChild(btnWsp);
     });
-    // 2) En cada modal, agregar boton WSP debajo de AGREGAR AL CARRITO
     document.querySelectorAll('.modal-info').forEach(info => {
       if(info.querySelector('.btn-wsp')) return;
       const {nombre, precio} = {nombre: info.querySelector('h2')?.innerText?.trim() || 'Producto', precio: info.querySelector('.price')?.innerText?.trim() || ''};
