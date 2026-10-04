@@ -155,33 +155,31 @@
     </section>
     <footer class="footer"><p>© 2026 ESTILO KUSARI — Salta, Argentina. Hecho a mano con <span class="rosa">♥</span></p></footer>
 <script>
-const WHATSAPP_NUMBER = "5493875000000";
-
-function comprarPorWhatsApp(nombre, precio) {
-  const msg = `Hola Astra! ✨ Quiero: ${nombre} - ${precio}. La vi en stylo-kusari.vercel.app`;
-  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`, '_blank');
-}
-
-document.querySelectorAll('.card').forEach(card => {
-  const nombre = card.querySelector('h3')?.innerText || 'Producto Kusari';
-  const precio = card.querySelector('p')?.innerText || '';
-  const btn = card.querySelector('button');
-  if(btn){
-    btn.innerText = 'COMPRAR POR WHATSAPP';
-    btn.onclick = () => comprarPorWhatsApp(nombre, precio);
-  }
-});
-</script>
-  <style>
-    #cart-drawer img,
-    .cart-drawer img,
-    .cart-item img {
-      width: 60px !important;
-      height: 60px !important;
-      max-width: 60px !important;
-      object-fit: cover !important;
+  // Botones de cada producto -> WhatsApp directo
+  document.querySelectorAll('.card, .producto').forEach(card => {
+    const btn = card.querySelector('button');
+    const nombre = card.querySelector('h3')?.innerText || 'Producto STYLO KUSARI';
+    const precio = card.querySelector('span, .precio')?.innerText || '';
+    if(btn){
+      btn.innerText = 'COMPRAR POR WHATSAPP';
+      btn.onclick = () => {
+        const msg = `Hola STYLO KUSARI! Quiero comprar: ${nombre} ${precio}`;
+        window.open(`https://wa.me/5493875000000?text=${encodeURIComponent(msg)}`, '_blank');
+      };
     }
-  </style>
+  });
+</script>
+
+<style>
+  /* Fotos chiquitas solo en el carrito */
+  #cart-drawer img, .cart-drawer img, .cart-item img {
+    width: 60px !important;
+    height: 60px !important;
+    max-width: 60px !important;
+    object-fit: cover !important;
+    border-radius: 8px !important;
+  }
+</style>
+
 </body>
-</html>
 </html>
