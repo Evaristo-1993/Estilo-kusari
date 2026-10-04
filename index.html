@@ -171,7 +171,6 @@
 </script>
 
 <style>
-  /* Fotos chiquitas solo en el carrito */
   #cart-drawer img, .cart-drawer img, .cart-item img {
     width: 60px !important;
     height: 60px !important;
@@ -180,6 +179,22 @@
     border-radius: 8px !important;
   }
 </style>
+
+<script>
+  const WHATSAPP_NUMBER = "5493875000000";
+  document.querySelectorAll('.card, .producto').forEach(card => {
+    const btn = card.querySelector('button');
+    if(btn){
+      btn.innerText = 'COMPRAR POR WHATSAPP';
+      btn.onclick = () => {
+        const nombre = card.querySelector('h3')?.innerText || 'Producto';
+        const precio = card.querySelector('.precio, span')?.innerText || '';
+        const msg = `Hola STYLO KUSARI! Quiero comprar: ${nombre} ${precio}`;
+        window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`, '_blank');
+      };
+    }
+  });
+</script>
 
 </body>
 </html>
