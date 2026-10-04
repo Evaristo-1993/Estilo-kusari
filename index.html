@@ -155,12 +155,22 @@
     </section>
     <footer class="footer"><p>© 2026 ESTILO KUSARI — Salta, Argentina. Hecho a mano con <span class="rosa">♥</span></p></footer>
 <script>
-const WHATSAPP_NUMBER = "5493875000000"; // numero de prueba
+const WHATSAPP_NUMBER = "5493875000000";
 
 function comprarPorWhatsApp(nombre, precio) {
   const msg = `Hola Astra! ✨ Quiero: ${nombre} - ${precio}. La vi en stylo-kusari.vercel.app`;
   window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`, '_blank');
 }
+
+document.querySelectorAll('.card').forEach(card => {
+  const nombre = card.querySelector('h3')?.innerText || 'Producto Kusari';
+  const precio = card.querySelector('p')?.innerText || '';
+  const btn = card.querySelector('button');
+  if(btn){
+    btn.innerText = 'COMPRAR POR WHATSAPP';
+    btn.onclick = () => comprarPorWhatsApp(nombre, precio);
+  }
+});
 </script>
 </body>
 </html>
