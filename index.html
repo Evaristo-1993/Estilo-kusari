@@ -179,22 +179,27 @@
     border-radius: 8px !important;
   }
 </style>
-
 <script>
   const WHATSAPP_NUMBER = "5493875000000";
-  document.querySelectorAll('.card, .producto').forEach(card => {
-    const btn = card.querySelector('button');
-    if(btn){
-      btn.innerText = 'COMPRAR POR WHATSAPP';
-      btn.onclick = () => {
-        const nombre = card.querySelector('h3')?.innerText || 'Producto';
-        const precio = card.querySelector('.precio, span')?.innerText || '';
-        const msg = `Hola STYLO KUSARI! Quiero comprar: ${nombre} ${precio}`;
-        window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`, '_blank');
-      };
-    }
-  });
+  function activarWSP(){
+    document.querySelectorAll('button').forEach(btn=>{
+      if(btn.innerText.includes('VER') || btn.innerText.includes('AGREGAR')){
+        if(!btn.dataset.wsp){
+          btn.dataset.wsp="1";
+          btn.innerText='COMPRAR POR WHATSAPP';
+          btn.style.background='#25D366';
+          btn.style.color='white';
+          btn.onclick=(e)=>{
+            e.preventDefault();
+            const nombre = btn.closest('div')?.querySelector('h3')?.innerText || 'Producto STYLO KUSARI';
+            window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Hola STYLO KUSARI! Quiero '+nombre)}`,'_blank');
+          };
+        }
+      }
+    });
+  }
+  setInterval(activarWSP,800);
+  activarWSP();
 </script>
-
 </body>
 </html>
