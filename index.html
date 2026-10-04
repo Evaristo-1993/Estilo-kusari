@@ -154,21 +154,6 @@
         </div>
     </section>
     <footer class="footer"><p>© 2026 ESTILO KUSARI — Salta, Argentina. Hecho a mano con <span class="rosa">♥</span></p></footer>
-<script>
-  // Botones de cada producto -> WhatsApp directo
-  document.querySelectorAll('.card, .producto').forEach(card => {
-    const btn = card.querySelector('button');
-    const nombre = card.querySelector('h3')?.innerText || 'Producto STYLO KUSARI';
-    const precio = card.querySelector('span, .precio')?.innerText || '';
-    if(btn){
-      btn.innerText = 'COMPRAR POR WHATSAPP';
-      btn.onclick = () => {
-        const msg = `Hola STYLO KUSARI! Quiero comprar: ${nombre} ${precio}`;
-        window.open(`https://wa.me/5493875000000?text=${encodeURIComponent(msg)}`, '_blank');
-      };
-    }
-  });
-</script>
 
 <style>
   #cart-drawer img, .cart-drawer img, .cart-item img {
@@ -178,29 +163,63 @@
     object-fit: cover !important;
     border-radius: 8px !important;
   }
+  .btn-wsp {
+    background: #25D366 !important;
+    color: white !important;
+    font-weight: 900 !important;
+    border: none;
+    border-radius: 999px;
+    padding: 10px 14px;
+    cursor: pointer;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    transition: .2s;
+    display: inline-block;
+    text-align: center;
+  }
+  .btn-wsp:hover { background: #1ebe5d !important; transform: scale(1.02); }
+  .card-actions { display:flex; gap:6px; flex-wrap:wrap; align-items:center; }
+  .card-actions .btn-wsp { flex: 1 1 100%; margin-top: 4px; }
+  .modal-info .btn-wsp { width: 100%; margin-top: 8px; padding: 14px; }
 </style>
 <script>
   const WHATSAPP_NUMBER = "5493875000000";
-  function activarWSP(){
-    document.querySelectorAll('button').forEach(btn=>{
-      if(btn.innerText.includes('VER') || btn.innerText.includes('AGREGAR')){
-        if(!btn.dataset.wsp){
-          btn.dataset.wsp="1";
-          btn.innerText='COMPRAR POR WHATSAPP';
-          btn.style.background='#25D366';
-          btn.style.color='white';
-          btn.style.fontWeight='900';
-          btn.onclick=(e)=>{
-            e.preventDefault();
-            const nombre = btn.closest('div')?.querySelector('h3')?.innerText || 'Producto STYLO KUSARI';
-            window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Hola STYLO KUSARI! Quiero '+nombre)}`,'_blank');
-          };
-        }
-      }
+  document.addEventListener('DOMContentLoaded', () => {
+    function getDatosDesde(el){
+      const card = el.closest('.card, .modal-box');
+      const nombre = card?.querySelector('h3, h2')?.innerText?.trim() || 'Producto STYLO KUSARI';
+      const precio = card?.querySelector('.card-info span, .price')?.innerText?.trim() || '';
+      return {nombre, precio};
+    }
+    // 1) En cada card, agregar boton WSP si no existe
+    document.querySelectorAll('.card').forEach(card => {
+      const actions = card.querySelector('.card-actions');
+      if(!actions) return;
+      if(actions.querySelector('.btn-wsp')) return;
+      const btnWsp = document.createElement('button');
+      btnWsp.className = 'btn-wsp';
+      btnWsp.innerText = 'COMPRAR POR WHATSAPP';
+      btnWsp.addEventListener('click', () => {
+        const {nombre, precio} = getDatosDesde(card);
+        const msg = `Hola STYLO KUSARI! Quiero ${nombre} ${precio}`.trim();
+        window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`, '_blank');
+      });
+      actions.appendChild(btnWsp);
     });
-  }
-  setInterval(activarWSP,800);
-  activarWSP();
+    // 2) En cada modal, agregar boton WSP debajo de AGREGAR AL CARRITO
+    document.querySelectorAll('.modal-info').forEach(info => {
+      if(info.querySelector('.btn-wsp')) return;
+      const {nombre, precio} = {nombre: info.querySelector('h2')?.innerText?.trim() || 'Producto', precio: info.querySelector('.price')?.innerText?.trim() || ''};
+      const btnWsp = document.createElement('button');
+      btnWsp.className = 'btn-wsp full';
+      btnWsp.innerText = 'COMPRAR POR WHATSAPP';
+      btnWsp.addEventListener('click', () => {
+        const msg = `Hola STYLO KUSARI! Quiero ${nombre} ${precio}`.trim();
+        window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`, '_blank');
+      });
+      info.appendChild(btnWsp);
+    });
+  });
 </script>
 </body>
 </html>
